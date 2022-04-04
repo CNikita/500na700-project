@@ -175,7 +175,7 @@ header .active-dropdown {
   height: 24px;
   margin: 0px 15px;
   background-color: initial;
-  background-image: url("/images/Arrow.svg");
+  background-image: url("./images/Arrow.svg");
   position: relative;
   transform: initial;
   left: initial;
@@ -186,7 +186,7 @@ header .active-dropdown {
   transform: rotate(180deg);
 }
 .splide__arrow:hover {
-  background-image: url("/images/Arrowhower.svg");
+  background-image: url("./images/Arrowhower.svg");
 }
 .splide .splide__slide img {
   object-fit: cover;

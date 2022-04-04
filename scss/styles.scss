@@ -168,7 +168,7 @@ header {
     height: 24px;
     margin: 0px 15px;
     background-color: initial;
-    background-image: url("./images/Arrow.svg");
+    background-image: url("../images/Arrow.svg");
     position: relative;
     transform: initial;
     left: initial;
@@ -178,7 +178,7 @@ header {
       transform: rotate(180deg);
     }
     &:hover {
-      background-image: url("./images/Arrowhower.svg");
+      background-image: url("../images/Arrowhower.svg");
     }
   }
   & &__slide {

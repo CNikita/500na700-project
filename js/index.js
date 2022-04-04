@@ -33,7 +33,6 @@ burgerMenuClose.addEventListener("click", () => isOpenBurgerMenu(false));
 // START submenu-visibility
 for (let i = 0; i < menuListItem.length; i++) {
   menuListItem[i].addEventListener("click", function (event) {
-    if (event.target.href == location.href) { event.preventDefault() }
     if (!this.classList.contains("active")) {
       [].forEach.call(menuListItem, (elem) => removeOrAdd(elem, 'remove'));
       removeOrAdd(this, 'add');
@@ -84,7 +83,7 @@ splide_news.mount();
 function accordion(elements, childProp) {
   for (let i = 0; i < elements.length; i++) {
     elements[i].addEventListener("click", function (event) {
-      // if (event.target.href == location.href) { event.preventDefault() }
+      if (event.target.href == location.href) { event.preventDefault() }
       const panel = this[childProp][1];
       if (panel.style.maxHeight) {
         panel.style.maxHeight = null;

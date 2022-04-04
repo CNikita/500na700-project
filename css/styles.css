@@ -175,7 +175,7 @@ header .active-dropdown {
   height: 24px;
   margin: 0px 15px;
   background-color: initial;
-  background-image: url("./images/Arrow.svg");
+  background-image: url("../images/");
   position: relative;
   transform: initial;
   left: initial;

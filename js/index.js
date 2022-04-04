@@ -7,7 +7,8 @@ const questionsElements = document.getElementsByClassName("questions__element");
 const burgerMenuElements = document.getElementsByClassName("burger-menu__element");
 
 fadeElement.classList.add("fade");
-fadeElement.addEventListener("click", function () {
+fadeElement.addEventListener("click", function (event) {
+  event.preventDefault()
   document.body.style.overflow = "initial";
   fadeElement.remove();
   isOpenBurgerMenu(false);
@@ -33,6 +34,7 @@ burgerMenuClose.addEventListener("click", () => isOpenBurgerMenu(false));
 // START submenu-visibility
 for (let i = 0; i < menuListItem.length; i++) {
   menuListItem[i].addEventListener("click", function (event) {
+    if (event.target.href == location.href) { event.preventDefault() }
     if (!this.classList.contains("active")) {
       [].forEach.call(menuListItem, (elem) => removeOrAdd(elem, 'remove'));
       removeOrAdd(this, 'add');

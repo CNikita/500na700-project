@@ -38,8 +38,10 @@ header .menu-list a {
   color: #ffffff;
   font-size: 16px;
 }
-header .menu-list a:hover {
-  color: #75ff72;
+@media (hover: hover) {
+  header .menu-list a:hover {
+    color: #75ff72;
+  }
 }
 header .menu-list .active::after {
   content: "";
@@ -185,8 +187,10 @@ header .active-dropdown {
 .splide__arrow--prev {
   transform: rotate(180deg);
 }
-.splide__arrow:hover {
-  background-image: url("../images/Arrowhower.svg");
+@media (hover: hover) {
+  .splide__arrow:hover {
+    background-image: url("../images/Arrowhower.svg");
+  }
 }
 .splide .splide__slide img {
   object-fit: cover;
@@ -395,6 +399,7 @@ header .active-dropdown {
   border-radius: 10px;
 }
 .subscribe form input[type=submit] {
+  color: #0b0a0d;
   width: 140px;
   height: 50px;
   padding: 15px 20px;
@@ -402,8 +407,10 @@ header .active-dropdown {
   border-radius: 10px;
   background-color: #ffffff;
 }
-.subscribe form input[type=submit]:hover {
-  background-color: #75ff72;
+@media (hover: hover) {
+  .subscribe form input[type=submit]:hover {
+    background-color: #75ff72;
+  }
 }
 @media (max-width: 1200px) {
   .subscribe form {

@@ -34,8 +34,10 @@ header {
         text-decoration: none;
         color: #ffffff;
         font-size: 16px;
-        &:hover {
-          color: #75ff72;
+        @media (hover: hover) {
+          &:hover {
+            color: #75ff72;
+          }
         }
       }
       .active {
@@ -177,8 +179,10 @@ header {
     &--prev {
       transform: rotate(180deg);
     }
-    &:hover {
-      background-image: url("../images/Arrowhower.svg");
+    @media (hover: hover) {
+      &:hover {
+        background-image: url("../images/Arrowhower.svg");
+      }
     }
   }
   & &__slide {
@@ -370,14 +374,17 @@ header {
       border: 1px solid rgba(0, 0, 0, 0.4);
       border-radius: 10px;
       &[type="submit"] {
+        color: #0b0a0d;
         width: 140px;
         height: 50px;
         padding: 15px 20px;
         border: 1px solid rgba(0, 0, 0, 0.4);
         border-radius: 10px;
         background-color: #ffffff;
-        &:hover {
-          background-color: #75ff72;
+        @media (hover: hover) {
+          &:hover {
+            background-color: #75ff72;
+          }
         }
       }
     }

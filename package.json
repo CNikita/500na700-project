@@ -1,0 +1,25 @@
+{
+  "name": "500na700-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/CNikita/500na700-project.git"
+  },
+  "author": "Nikita",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CNikita/500na700-project/issues"
+  },
+  "homepage": "https://github.com/CNikita/500na700-project#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-notify": "^4.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.49.10"
+  }
+}

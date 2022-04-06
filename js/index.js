@@ -5,6 +5,13 @@ const menuListItem = document.getElementsByClassName("menu-list")[0].children;
 const fadeElement = document.createElement('div');
 const questionsElements = document.getElementsByClassName("questions__element");
 const burgerMenuElements = document.getElementsByClassName("burger-menu__element");
+const subMenuListItems = document.getElementsByClassName("sub-menu-list")
+
+for (let i = 1; i < subMenuListItems.length; i++) {
+  subMenuListItems[i].addEventListener("click", (e) => {
+    e.stopPropagation()
+  })
+}
 
 fadeElement.classList.add("fade");
 fadeElement.addEventListener("click", function (event) {
